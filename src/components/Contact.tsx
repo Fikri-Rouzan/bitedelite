@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
-import { Phone } from "lucide-react";
-import { SiInstagram, SiShopee } from "react-icons/si";
+import { SiWhatsapp, SiInstagram, SiShopee } from "react-icons/si";
 
 const Contact = () => {
   const whatsappNumber = "6285591136077";
@@ -51,7 +50,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 hover:scale-105 transition-all duration-300"
           >
-            <Phone size={24} />
+            <SiWhatsapp size={24} />
             <span>WhatsApp</span>
           </a>
 

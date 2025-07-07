@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { Menu, X } from "lucide-react";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <div className="md:hidden">
             <button onClick={() => setIsMenuOpen(true)}>
-              <Menu className="h-6 w-6 text-gray-700" />
+              <HiMenuAlt3 className="h-6 w-6 text-gray-700" />
             </button>
           </div>
         </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
       >
         <div className="flex justify-end p-4">
           <button onClick={() => setIsMenuOpen(false)}>
-            <X className="h-6 w-6 mr-2 text-gray-700" />
+            <HiX className="h-6 w-6 mr-2 text-gray-700" />
           </button>
         </div>
         <div className="flex flex-col items-start ml-8 space-y-6 mt-8">
