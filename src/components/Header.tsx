@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="py-10 mt-16 h-[65vh] md:h-[50vh] bg-cover text-center"
+      className="py-10 mt-16 h-[65vh] md:h-[75vh] bg-cover text-center"
       style={{
         backgroundImage: `url(${images.background})`,
       }}
