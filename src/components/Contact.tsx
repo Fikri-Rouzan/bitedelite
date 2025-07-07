@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { Phone } from "lucide-react";
 import { SiInstagram, SiShopee } from "react-icons/si";
 
@@ -13,14 +14,37 @@ const Contact = () => {
   const shopeeUrl = "https://id.shp.ee/mGg5fNt";
 
   return (
-    <section id="contact" className="py-10 mt-16">
+    <motion.section
+      id="contact"
+      className="py-10 mt-16"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">Hubungi Kami</h2>
-        <p className="text-gray-600 mb-10 max-w-2xl mx-auto text-lg">
+        <motion.h2
+          className="text-4xl font-bold text-gray-800 mb-8"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+        >
+          Hubungi Kami
+        </motion.h2>
+        <motion.p
+          className="text-gray-600 mb-10 max-w-2xl mx-auto text-lg"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           Punya pertanyaan atau mau langsung pesan? Jangan ragu untuk
           menghubungi kami melalui platform di bawah ini.
-        </p>
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+        </motion.p>
+        <motion.div
+          className="flex flex-wrap justify-center items-center gap-4 md:gap-6"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+        >
           <a
             href={whatsappUrl}
             target="_blank"
@@ -50,9 +74,9 @@ const Contact = () => {
             <SiShopee size={24} />
             <span>Shopee</span>
           </a>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
