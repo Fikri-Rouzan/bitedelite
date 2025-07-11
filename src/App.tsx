@@ -5,17 +5,17 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <About />
-      <Products />
-      <Contact />
+      <main>
+        <Header />
+        <About />
+        <Products />
+        <Contact />
+      </main>
       <Footer />
     </>
   );
 }
-
-export default App;

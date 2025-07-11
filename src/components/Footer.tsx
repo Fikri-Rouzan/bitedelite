@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <motion.footer
       className="border-t border-gray-400 mx-[10%] py-6 mt-16"
@@ -28,6 +28,4 @@ const Footer = () => {
       </div>
     </motion.footer>
   );
-};
-
-export default Footer;
+}

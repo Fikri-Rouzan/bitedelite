@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { SiWhatsapp, SiInstagram, SiShopee } from "react-icons/si";
 
-const Contact = () => {
+export default function Contact() {
   const whatsappNumber = "6285591136077";
   const whatsappMessage =
     "Hai BiteDelite! Saya tertarik nih sama produknya. Boleh minta info atau langsung order ya?";
@@ -11,6 +11,28 @@ const Contact = () => {
   const instagramUrl =
     "https://www.instagram.com/bitedelite_?igsh=MWxtM3Ztd3V4eHJ3NQ==";
   const shopeeUrl = "https://id.shp.ee/mGg5fNt";
+
+  const contactLinks = [
+    {
+      href: whatsappUrl,
+      Icon: SiWhatsapp,
+      label: "WhatsApp",
+      className: "bg-green-500 hover:bg-green-600",
+    },
+    {
+      href: instagramUrl,
+      Icon: SiInstagram,
+      label: "Instagram",
+      className:
+        "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-80",
+    },
+    {
+      href: shopeeUrl,
+      Icon: SiShopee,
+      label: "Shopee",
+      className: "bg-orange-500 hover:bg-orange-600",
+    },
+  ];
 
   return (
     <motion.section
@@ -38,45 +60,27 @@ const Contact = () => {
           Punya pertanyaan atau mau langsung pesan? Jangan ragu untuk
           menghubungi kami melalui platform di bawah ini.
         </motion.p>
+
         <motion.div
           className="flex flex-wrap justify-center items-center gap-4 md:gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 hover:scale-105 transition-all duration-300"
-          >
-            <SiWhatsapp size={24} />
-            <span>WhatsApp</span>
-          </a>
-
-          <a
-            href={instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:opacity-80 hover:scale-105 transition-all duration-300"
-          >
-            <SiInstagram size={24} />
-            <span>Instagram</span>
-          </a>
-
-          <a
-            href={shopeeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-orange-600 hover:scale-105 transition-all duration-300"
-          >
-            <SiShopee size={24} />
-            <span>Shopee</span>
-          </a>
+          {contactLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-3 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:scale-105 transition-all duration-300 ${link.className}`}
+            >
+              <link.Icon size={24} />
+              <span>{link.label}</span>
+            </a>
+          ))}
         </motion.div>
       </div>
     </motion.section>
   );
-};
-
-export default Contact;
+}

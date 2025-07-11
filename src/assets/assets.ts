@@ -1,7 +1,7 @@
 import logo from "./images/logo.png";
 import background from "./images/background.png";
-import basreng from "./images/basreng.png";
 import poster from "./images/poster.png";
+import basreng from "./images/basreng.png";
 import kripca from "./images/kripca.png";
 
 export const images = {
@@ -12,7 +12,14 @@ export const images = {
   kripca,
 };
 
-export const productsData = [
+interface Product {
+  name: string;
+  image: string;
+  description: string;
+  price: string;
+}
+
+export const productsData: Product[] = [
   {
     name: "Basreng Pedas",
     image: images.basreng,

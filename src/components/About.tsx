@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { images } from "../assets/assets";
 
-const About = () => {
+export default function About() {
   return (
     <motion.section
       id="about"
@@ -19,12 +19,13 @@ const About = () => {
         >
           Tentang Kami
         </motion.h2>
+
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="w-full md:w-auto flex-shrink-0">
             <motion.img
               src={images.poster}
               alt="BiteDelite Poster"
-              className="w-96 h-96 mx-auto object-cover rounded-xl shadow-2xl"
+              className="w-80 h-80 md:w-96 md:h-96 mx-auto object-cover rounded-xl shadow-2xl"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
@@ -58,6 +59,4 @@ const About = () => {
       </div>
     </motion.section>
   );
-};
-
-export default About;
+}
