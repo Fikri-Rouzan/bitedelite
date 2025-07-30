@@ -7,8 +7,6 @@ This is a landing page for BiteDelite, a snack food business offering a uniquely
 ## 🛠️ Technologies Used
 
 - 🌐 Programming Language: TypeScript.
-- 📄 Markup Language: HTML.
-- 🎨 Stylesheet Language: CSS.
 - 🧩 Framework: Tailwind CSS.
 - ⚛️ Libraries: React, React Icons, React Scroll, and Motion.
 - ⚡ Tool: Vite.
