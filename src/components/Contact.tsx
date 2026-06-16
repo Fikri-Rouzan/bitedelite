@@ -2,15 +2,14 @@ import { motion } from "motion/react";
 import { SiWhatsapp, SiInstagram, SiShopee } from "react-icons/si";
 
 export default function Contact() {
-  const whatsappNumber = "6285591136077";
+  const whatsappNumber = "";
   const whatsappMessage =
     "Hai BiteDelite! Saya tertarik nih sama produknya. Boleh minta info atau langsung order ya?";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    whatsappMessage
+    whatsappMessage,
   )}`;
-  const instagramUrl =
-    "https://www.instagram.com/bitedelite_?igsh=MWxtM3Ztd3V4eHJ3NQ==";
-  const shopeeUrl = "https://id.shp.ee/mGg5fNt";
+  const instagramUrl = "https://www.instagram.com/";
+  const shopeeUrl = "https://shopee.co.id/";
 
   const contactLinks = [
     {

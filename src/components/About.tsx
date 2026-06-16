@@ -21,7 +21,7 @@ export default function About() {
         </motion.h2>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-          <div className="w-full md:w-auto flex-shrink-0">
+          <div className="w-full md:w-auto shrink-0">
             <motion.img
               src={images.poster}
               alt="BiteDelite Poster"
