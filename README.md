@@ -1,14 +1,53 @@
 # BiteDelite
 
-## ℹ️ About
+## 📌 Deskripsi
 
-This is a landing page for BiteDelite, a snack food business offering a uniquely crunchy snack with a bold blend of savory and spicy in every bite. Featuring products like basreng and keripik kaca, the brand targets snack lovers who crave intense, addictive flavors. The name 'BiteDelite' itself means 'a bite full of delight,' reflecting a mission to serve delicious snacks in attractive packaging at an affordable price.
+Landing page ini menyajikan informasi profil usaha dan katalog produk untuk BiteDelite, sebuah bisnis makanan ringan yang menawarkan camilan renyah dengan kombinasi rasa gurih serta pedas. Tampilan antarmuka ini memuat rincian produk seperti basreng dan keripik kaca, sekaligus menjelaskan misi usaha dalam menyediakan makanan ringan dalam kemasan dengan harga terjangkau bagi konsumen. Arti dari nama BiteDelite sendiri merepresentasikan komitmen untuk menghadirkan rasa yang memberikan kepuasan pada setiap gigitannya.
 
-## 🛠️ Technologies Used
+---
 
-- 🌐 **Programming Language:** TypeScript.
-- 🧩 **Framework:** Tailwind CSS.
-- ⚛️ **Libraries:** React, React Icons, React Scroll, and Motion.
-- ⚡ **Tool:** Vite.
-- 💻 **Software:** Visual Studio Code.
-- 🚀 **Deployment:** Netlify.
+## 🛠️ Tech Stack
+
+| Kategori                    | Teknologi yang Digunakan                         |
+| :-------------------------- | :----------------------------------------------- |
+| 🌐 **Programming Language** | `TypeScript`                                     |
+| 🧩 **Framework**            | `Tailwind CSS`                                   |
+| ⚛️ **Libraries**            | `React`, `React Icons`, `React Scroll`, `Motion` |
+| ⚡ **Tool**                 | `Vite`                                           |
+| 🚀 **Deployment**           | `Netlify`                                        |
+
+---
+
+## ⚙️ Petunjuk Pengaturan
+
+1. **Prasyarat**
+   - Node.js 24 atau lebih baru.
+   - Git terinstal di komputer.
+   - PNPM 10 terinstal di komputer (Opsional).
+
+2. **Clone Repositori**
+
+```bash
+git clone https://github.com/Fikri-Rouzan/bitedelite.git
+cd bitedelite
+```
+
+4. **Install Package**
+
+```bash
+# Dengan npm
+npm i
+
+# Dengan pnpm
+pnpm i
+```
+
+5. **Menjalankan Program**
+
+```bash
+# Dengan npm
+npm run dev
+
+# Dengan pnpm
+pnpm run dev
+```
