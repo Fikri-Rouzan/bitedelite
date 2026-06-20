@@ -32,7 +32,7 @@ git clone https://github.com/Fikri-Rouzan/bitedelite.git
 cd bitedelite
 ```
 
-4. **Install Package**
+3. **Install Package**
 
 ```bash
 # Dengan npm
@@ -42,7 +42,7 @@ npm i
 pnpm i
 ```
 
-5. **Menjalankan Program**
+4. **Menjalankan Program**
 
 ```bash
 # Dengan npm
