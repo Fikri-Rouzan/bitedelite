@@ -12,7 +12,7 @@ Landing page ini menyajikan informasi profil usaha dan katalog produk untuk Bite
 | :-------------------------- | :----------------------------------------------- |
 | 🌐 **Programming Language** | `TypeScript`                                     |
 | 🧩 **Framework**            | `Tailwind CSS`                                   |
-| ⚛️ **Libraries**            | `React`, `React Icons`, `React Scroll`, `Motion` |
+| ⚛️ **Libraries**            | `React`, `Motion`, `React Scroll`, `React Icons` |
 | ⚡ **Tool**                 | `Vite`                                           |
 | 🚀 **Deployment**           | `Netlify`                                        |
 
@@ -49,5 +49,5 @@ pnpm i
 npm run dev
 
 # Dengan pnpm
-pnpm run dev
+pnpm dev
 ```
